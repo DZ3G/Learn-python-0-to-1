@@ -1,0 +1,69 @@
+balance = 1000
+import time
+game = True
+
+def main_menu():
+    print("===================================")
+    print("here is the option available: \n1 - Check balance\n2 - Withdraw money\n3 - Exit")
+    option = input('select: ')
+    return option
+
+def lock():
+    user = input("please enter your pin: ")
+    attempts = 0
+    pin = "4821"
+    while user != pin and attempts < 2:
+        attempts += 1
+        print(f"wrong, {3-attempts} attempts left")
+        user = input("please enter your pin: ")
+
+    if user == pin:
+        print("Welcome")
+    else:
+        print("Account locked")
+        exit()
+
+def withdraw(x):
+    print("======================")
+    print(f"current balance:{x}$ ")
+    withdraw = int(input("amount selected: "))
+    
+    while withdraw <= 0 or withdraw > x:     
+        if withdraw <= 0:
+            print("invalid amount, try again")
+            withdraw = int(input("amount selected: "))
+
+        elif withdraw > x : 
+            print("not enough money, try again")
+            withdraw = int(input("amount selected: "))
+
+    if withdraw <= x:
+        x -= withdraw
+        return x
+    
+
+lock()
+choice = main_menu()
+
+
+while game == True: 
+    if choice == "1" : 
+        print("==================")
+        print(f"current balance: {balance}$")
+        time.sleep(2)
+
+    elif choice == "2":
+        balance = withdraw(balance)
+        print(f"the new balance is {balance}")
+        time.sleep(2)
+
+    elif choice == "3":
+        print("session ended")
+        print("=============")
+        break
+    elif choice == "goodbye":
+        print("goodbye!")
+        exit()
+    else: 
+        choice = input("invalid choice, try again: ")
+    choice = main_menu()
