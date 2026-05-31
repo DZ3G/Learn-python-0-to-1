@@ -13,7 +13,7 @@ All tutorials are from [Tech With Tim — Python Programming](https://www.techwi
 
 | Stage | Folder | Link | Status |
 |-------|--------|------|--------|
-| 1 | [Python for complete beginners](./Python%20for%20complete%20beginners) | [Beginner Python](https://www.techwithtim.net/tutorials/python-programming) | ✅ Done |
+| 1 | [Python for complete beginners](./Python%20for%20complete%20beginners) | [Beginner Python](https://www.techwithtim.net/tutorials/python-programming/beginner-python-tutorials) | ✅ Done |
 | 2 | [advanced syntax](./advanced%20syntax) | [Intermediate Python](https://www.techwithtim.net/tutorials/python-programming/intermediate-python-tutorials) | ⏳ Pending |
 | 3 | [Object oriented programming — classes, methods, inheritance](./Object%20oriented%20programming%20%E2%80%94%20classes%2C%20methods%2C%20inheritance) | [OOP in Python](https://www.techwithtim.net/tutorials/python-programming/classes-objects-in-python) | ⏳ Pending |
 | 4 | [Tic Tac Toe game with a simple AI](./Tic%20Tac%20Toe%20game%20with%20a%20simple%20AI) | [Tic Tac Toe + AI](https://www.techwithtim.net/tutorials/python-programming/tic-tac-toe-tutorial) | ⏳ Pending |
