@@ -1,0 +1,29 @@
+##################################
+income : 45
+expenses: 0
+Net income: 45
+##################################
+income : 45
+expenses: 10
+Net income: 35
+##################################
+income : 50
+expenses: 10
+Net income: 40
+
+##################################
+income : 45
+expenses: 0
+Net income: 45
+##################################
+income : 45
+expenses: 35
+Net income: 10
+##################################
+income: 545
+expenses: 0
+Net income: 545
+##################################
+income: 545
+expenses: 45
+Net income: 500
