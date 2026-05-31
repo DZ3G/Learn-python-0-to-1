@@ -41,8 +41,6 @@ The plan is to keep adding to this repo as I progress through more advanced topi
 
 - Intermediate Python : https://www.techwithtim.net/tutorials/python-programming/intermediate-python-tutorials
 
-- https://www.techwithtim.net/tutorials/python-programming/classes-objects-in-python
-
 ---
 
 ## Notes
