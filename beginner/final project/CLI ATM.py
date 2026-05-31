@@ -1,4 +1,9 @@
 import time
+import os
+
+# had to use claude because transaction.txt was not working when i changed it from /beginner to /final_project
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+TRANSACTION_FILE = os.path.join(BASE_DIR, "transaction.txt")
 income = 0
 expenses = 0
 username = "Moh"
@@ -20,7 +25,7 @@ def greeting():
 
 def check_transaction():
     try:
-        with open("transaction.txt", "r") as file:
+        with open(TRANSACTION_FILE, "r") as file:
             global transaction
             transaction = file.read()
             print("here is the last transaction: ")
@@ -76,7 +81,7 @@ def add_transaction():
 def load_transactions():
     global income, expenses
     try:
-        with open("transaction.txt", "r") as file:
+        with open(TRANSACTION_FILE, "r") as file:
             lines = file.readlines()
         
         print("DEBUG lines:", lines)  # add this
